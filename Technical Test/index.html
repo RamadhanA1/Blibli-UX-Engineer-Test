@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="header">
+      <a href="#home">
+        <img src="assets/img/logo.png" alt="" class="logo" />
+      </a>
+    </nav>
+
+    <!-- Block Layout -->
+    <div class="container">
+      <div class="block-1">1</div>
+      <div class="block-2">2</div>
+      <div class="block-3">3</div>
+      <div class="block-4">4</div>
+    </div>
+
+    <!-- Product -->
+    <div class="container">
+      <div class="card">
+        <img src="assets/img/product.png" alt="" />
+        <h3 class="product-title">
+          Nike AJ1 Retro High White University Blue Black 555088-134
+        </h3>
+        <h4 class="product-price">Rp3.550.000</h4>
+        <div class="product-disc">
+          <h5>Rp1.000.000<span>99%</span></h5>
+        </div>
+        <a href="#add" class="add-button">
+          <button>Add to bag</button>
+        </a>
+      </div>
+
+      <div class="card">
+        <img src="assets/img/product.png" alt="" />
+        <h3 class="product-title">
+          Nike AJ1 Retro High White University Blue Black 555088-134
+        </h3>
+        <h4 class="product-price">Rp3.550.000</h4>
+        <div class="product-disc">
+          <h5>Rp1.000.000<span>99%</span></h5>
+        </div>
+        <a href="#add" class="add-button">
+          <button>Add to bag</button>
+        </a>
+      </div>
+
+      <div class="card">
+        <img src="assets/img/product.png" alt="" />
+        <h3 class="product-title">
+          Nike AJ1 Retro High White University Blue Black 555088-134
+        </h3>
+        <h4 class="product-price">Rp3.550.000</h4>
+        <div class="product-disc">
+          <h5>Rp1.000.000<span>99%</span></h5>
+        </div>
+        <a href="#add" class="add-button">
+          <button>Add to bag</button>
+        </a>
+      </div>
+
+      <div class="card">
+        <img src="assets/img/product.png" alt="" />
+        <h3 class="product-title">
+          Nike AJ1 Retro High White University Blue Black 555088-134
+        </h3>
+        <h4 class="product-price">Rp3.550.000</h4>
+        <div class="product-disc">
+          <h5>Rp1.000.000<span>99%</span></h5>
+        </div>
+        <a href="#add" class="add-button">
+          <button>Add to bag</button>
+        </a>
+      </div>
+
+      <div class="card">
+        <img src="assets/img/product.png" alt="" />
+        <h3 class="product-title">
+          Nike AJ1 Retro High White University Blue Black 555088-134
+        </h3>
+        <h4 class="product-price">Rp3.550.000</h4>
+        <div class="product-disc">
+          <h5>Rp1.000.000<span>99%</span></h5>
+        </div>
+        <a href="#add" class="add-button">
+          <button>Add to bag</button>
+        </a>
+      </div>
+
+      <div class="card">
+        <img src="assets/img/product.png" alt="" />
+        <h3 class="product-title">
+          Nike AJ1 Retro High White University Blue Black 555088-134
+        </h3>
+        <h4 class="product-price">Rp3.550.000</h4>
+        <div class="product-disc">
+          <h5>Rp1.000.000<span>99%</span></h5>
+        </div>
+        <a href="#add" class="add-button">
+          <button>Add to bag</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <a href="#expand" class="expand">Show All ⋁</a>
+        <!-- <a href="#collapse">Collapse All ⋀</a> -->
+          <p class="container">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. At consectetur lorem
+          donec massa sapien faucibus et molestie. Sem fringilla ut morbi
+          tincidunt augue interdum velit euismod in. Eget duis at tellus at urna
+          condimentum mattis pellentesque. Etiam dignissim diam quis enim lobortis
+          scelerisque fermentum dui faucibus. Blandit aliquam etiam erat velit.
+          Scelerisque eu ultrices vitae auctor eu augue ut lectus. Commodo
+          ullamcorper a lacus vestibulum sed arcu. Turpis egestas maecenas
+          pharetra convallis posuere morbi. Morbi tincidunt augue interdum velit
+          euismod in pellentesque massa. Enim eu turpis egestas pretium aenean
+          pharetra magna. Fermentum posuere urna nec tincidunt praesent. In cursus
+          turpis massa tincidunt dui. Nullam non nisi est sit. Egestas diam in
+          arcu cursus euismod. Diam quam nulla porttitor massa id neque aliquam
+          vestibulum morbi. </p>
+      <h3>© 2022 PT Global Digital Niaga</h3>
+      
+    </div>
+
+    <script>
+        const exp = document.getElementsByClassName("expand");
+        var i;
+        for (i = 0; i < exp.length; i++) {
+            exp[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                
+                
+            } else {
+                content.style.display = "block";
+                
+            }
+        });
+        }
+    </script>
+  </body>
+</html>
