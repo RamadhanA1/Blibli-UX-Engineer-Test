@@ -20,6 +20,7 @@ function exp(){
   
   // Hidden Go to Top Button Function
   function scrollFunction() {
+    let btn = document.querySelector(".topbutton");
     if (
       document.body.scrollTop > 20 ||
       document.documentElement.scrollTop > 20

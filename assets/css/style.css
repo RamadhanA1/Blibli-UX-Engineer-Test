@@ -10,22 +10,7 @@ body{
 .container{
     padding: 20px 40px;
     display: grid;
-    display: -webkit-grid;
-    
-    /* overflow: auto; */
-    /* white-space: nowarp;     */
-    
-    
-}
-
-@media screen and (max-width:768px){
-    div#block-a{order: 4;}
-    div#block-b{order: 2;}
-    div#block-c{order: 1;}
-    div#block-d{order: 3;}
-    .container{
-        padding: 0 20px;
-    }
+    display: -webkit-grid;    
 }
 
 /* HEADER */
@@ -48,23 +33,6 @@ body{
     max-height: 50px;
 }
 
-@media screen and (max-width:768px){
-    .header{
-        text-align: center;
-        padding: none;
-    }
-    .header a{
-        float: none;
-        display: block;
-    }
-
-    .header a img.logo{
-        max-height: 40px;
-        float: none;
-    }
-
-    
-}
 
 
 /* PRODUCT */
@@ -174,34 +142,6 @@ body{
     font-family: Roboto;
 }
 
-@media screen and (max-width:768px){
-    .card{
-        width: 132px;
-        border-radius: 10px;
-    }
-    
-    .card img{
-        height: 100px;
-    }
-
-    .card .product-title{
-        font-size: small;
-    }
-    
-    .card .product-price{
-        font-size: small;
-    }
-
-    .card .product-disc{
-        font-size: smaller;
-    }
-
-    .card .add-button button{
-        border-radius: 5px;
-        padding: 8px;
-    }
-    
-}
 
 /* Layout */
 /* Block Layout */
@@ -284,13 +224,6 @@ body{
     color: #0072ff;
 }
 
-@media screen and (max-width:768px){
-    .footer h3{
-        font-size: medium;
-    }
-
-    
-}
 
 /* Top Button */
 .topbutton{
@@ -311,6 +244,58 @@ body{
 }
 
 @media screen and (max-width:768px){
+    div#block-a{order: 4;}
+    div#block-b{order: 2;}
+    div#block-c{order: 1;}
+    div#block-d{order: 3;}
+    .container{
+        padding: 0 20px;
+    }
+
+    .header{
+        text-align: center;
+        padding: none;
+    }
+    .header a{
+        float: none;
+        display: block;
+    }
+
+    .header a img.logo{
+        max-height: 40px;
+        float: none;
+    }
+
+    card{
+        width: 132px;
+        border-radius: 10px;
+    }
+    
+    .card img{
+        height: 140px;
+    }
+
+    .card .product-title{
+        font-size: small;
+    }
+    
+    .card .product-price{
+        font-size: small;
+    }
+
+    .card .product-disc{
+        font-size: smaller;
+    }
+
+    .card .add-button button{
+        border-radius: 10px;
+        padding: 8px;
+    }
+
+    .footer h3{
+        font-size: medium;
+    }
+
     .topbutton{
         font-size: 20px;
         padding: 23px 30px;
@@ -319,20 +304,3 @@ body{
 
     
 }
-
-
-/* OPTIONAL USED */
-
-
-
-/* .header logo{
-    font-size: 25px;
-    font-weight: bold;
-
-}
-
-.header-right{
-    float: right;
-
-} */
-
