@@ -32,9 +32,12 @@
 
       <!-- Product -->
       <div class="product" id="block-d">
+        <!-- <button class="left">test</button> -->
         <div class="scroll">
-          <div class="card-pack">
-            <div class="card">
+          <button id="btn-left" type="button">◀</button>
+          <button id="btn-right" type="button">▶</button>
+          <ul class="card-pack">
+            <li class="card">
               <img src="assets/img/product.png" alt="" />
               <h3 class="product-title">
                 Nike AJ1 Retro High White University Blue Black 555088-134
@@ -46,9 +49,9 @@
               <a href="#add" class="add-button">
                 <button>Add to bag</button>
               </a>
-            </div>
+            </li>
 
-            <div class="card">
+            <li class="card">
               <img src="assets/img/product.png" alt="" />
               <h3 class="product-title">
                 Nike AJ1 Retro High White University Blue Black 555088-134
@@ -60,9 +63,9 @@
               <a href="#add" class="add-button">
                 <button>Add to bag</button>
               </a>
-            </div>
+            </li>
 
-            <div class="card">
+            <li class="card">
               <img src="assets/img/product.png" alt="" />
               <h3 class="product-title">
                 Nike AJ1 Retro High White University Blue Black 555088-134
@@ -74,9 +77,9 @@
               <a href="#add" class="add-button">
                 <button>Add to bag</button>
               </a>
-            </div>
+            </li>
 
-            <div class="card">
+            <li class="card">
               <img src="assets/img/product.png" alt="" />
               <h3 class="product-title">
                 Nike AJ1 Retro High White University Blue Black 555088-134
@@ -88,9 +91,9 @@
               <a href="#add" class="add-button">
                 <button>Add to bag</button>
               </a>
-            </div>
+            </li>
 
-            <div class="card">
+            <li class="card">
               <img src="assets/img/product.png" alt="" />
               <h3 class="product-title">
                 Nike AJ1 Retro High White University Blue Black 555088-134
@@ -102,9 +105,9 @@
               <a href="#add" class="add-button">
                 <button>Add to bag</button>
               </a>
-            </div>
+            </li>
 
-            <div class="card">
+            <li class="card">
               <img src="assets/img/product.png" alt="" />
               <h3 class="product-title">
                 Nike AJ1 Retro High White University Blue Black 555088-134
@@ -116,9 +119,9 @@
               <a href="#add" class="add-button">
                 <button>Add to bag</button>
               </a>
-            </div>
+            </li>
 
-            <div class="card">
+            <li class="card">
               <img src="assets/img/product.png" alt="" />
               <h3 class="product-title">
                 Nike AJ1 Retro High White University Blue Black 555088-134
@@ -130,15 +133,45 @@
               <a href="#add" class="add-button">
                 <button>Add to bag</button>
               </a>
-            </div>
-          </div>
+            </li>
+
+            <li class="card">
+              <img src="assets/img/product.png" alt="" />
+              <h3 class="product-title">
+                Nike AJ1 Retro High White University Blue Black 555088-134
+              </h3>
+              <h4 class="product-price">Rp3.550.000</h4>
+              <div class="product-disc">
+                <h5>Rp1.000.000<span>99%</span></h5>
+              </div>
+              <a href="#add" class="add-button">
+                <button>Add to bag</button>
+              </a>
+            </li>
+
+            <li class="card">
+              <img src="assets/img/product.png" alt="" />
+              <h3 class="product-title">
+                Nike AJ1 Retro High White University Blue Black 555088-134
+              </h3>
+              <h4 class="product-price">Rp3.550.000</h4>
+              <div class="product-disc">
+                <h5>Rp1.000.000<span>99%</span></h5>
+              </div>
+              <a href="#add" class="add-button">
+                <button>Add to bag</button>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </main>
 
     <!-- Footer -->
     <div class="footer">
-      <a href="#expand" onclick="exp()" id="change" class="expand">Show All ▼</a>
+      <a href="#expand" onclick="exp()" id="change" class="expand"
+        >Collapse All ▼</a
+      >
       <!-- <a href="#expand">Collapse All ▲</a> -->
       <p class="container">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -162,6 +195,16 @@
     <!-- Go to Top Button -->
     <button onclick="topFunc()" class="topbutton" title="Go to Top">↑</button>
 
-    
+    <script>
+      let btnLeft = document.getElementById("btn-left");
+      btnLeft.onclick = function () {
+        document.getElementById("block-d").scrollLeft -= 30;
+      };
+
+      let btnRight = document.getElementById("btn-right");
+      btnRight.onclick = function () {
+        document.getElementById("block-d").scrollLeft += 30;
+      };
+    </script>
   </body>
 </html>

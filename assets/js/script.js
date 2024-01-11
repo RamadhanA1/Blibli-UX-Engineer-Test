@@ -9,10 +9,10 @@ function exp(){
       var coll = document.getElementById("change");
       if (content.style.display === "block") {
         content.style.display = "none";
-        coll.textContent = "Collapse All ▲";
+        coll.textContent = "Show All ▼";
       } else {
         content.style.display = "block";
-        coll.textContent = "Show All ▼";
+        coll.textContent = "Collapse All ▲";
       }
     });
   }
@@ -36,3 +36,5 @@ function exp(){
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+
+  
